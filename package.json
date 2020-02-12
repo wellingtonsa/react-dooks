@@ -1,0 +1,37 @@
+{
+  "name": "react-dooks",
+  "version": "1.0.0",
+  "description": "A lib to manipulate DOM using Custom Hooks",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --declaration",
+    "dev": "nodemon --watch \"src//\" --exec \"ts-node src/index.ts\" -e ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wellingtonsa/react-dooks.git"
+  },
+  "keywords": [
+    "dom",
+    "hooks",
+    "manipulate",
+    "custom",
+    "react",
+    "reactjs"
+  ],
+  "author": "Wellington Araujo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wellingtonsa/react-dooks/issues"
+  },
+  "homepage": "https://github.com/wellingtonsa/react-dooks#readme",
+  "devDependencies": {
+    "@types/node": "^13.7.1",
+    "@types/react": "^16.9.19",
+    "nodemon": "^2.0.2",
+    "react": "^16.12.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}
