@@ -1,0 +1,73 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.logo * {
+    font-size: 56px;
+    font-family: 'Rasheeq', Courier, monospace ;
+    color: #00d455ff;
+}
+
+.logo .m {
+    margin-right: 0px;
+    width: 0px;
+    opacity: 0;
+    animation: show-m 8s infinite;
+}
+
+.logo .ho {
+    margin-left: 0px;
+    width: 0px;
+    opacity: 0;
+    animation: show-ho 8s infinite;
+}
+
+
+@keyframes show-m {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        width: 20px;
+        opacity: 0.5;
+    }
+    50% {
+        width: 40px;
+        margin-right: 15px;
+        opacity: 1;
+    }
+    75% {
+        width: 20px;
+        opacity: 0.5;
+    }
+    100% {
+        margin-right: 0px;
+        width: 0px;
+        opacity: 0;
+    }
+}
+@keyframes show-ho {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        width: 42.5px;
+        opacity: 0.5;
+    }
+    50% {
+        width: 85px;
+        margin-left: 15px;
+        opacity: 1;
+    }
+    75% {
+        width: 42.5px;
+        opacity: 0.5;
+    }
+    100% {
+        margin-left: 0px;
+        width: 0px;
+        opacity: 0;
+    }
+}
