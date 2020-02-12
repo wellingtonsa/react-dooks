@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
 export default (callback?: () => void, value?: number) => {
+  
   const isClient = typeof window === "object";
-
   const [percentage, setPercentage] = useState<number>(0);
   
   useEffect((): any => {

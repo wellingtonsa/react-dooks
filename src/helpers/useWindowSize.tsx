@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 export default () => {
+  
   const isClient = typeof window === "object";
 
   const getSize = () => {
