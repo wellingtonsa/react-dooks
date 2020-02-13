@@ -12,3 +12,7 @@
   [![npm](https://img.shields.io/npm/v/react-dooks?color=00d455ff)](https://www.npmjs.com/package/react-dooks)<space><space>
 
 </div>
+
+## Overview
+
+The React Hooks idea emerged of a poor approach to manipulate the DOM tree, causing disorganization and code snippets  ungainly on your code. 
