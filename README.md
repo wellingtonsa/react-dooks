@@ -15,4 +15,4 @@
 
 ## Overview
 
-The React Hooks idea emerged of a poor approach to manipulate the DOM tree, causing disorganization and code snippets  ungainly on your code. 
+The React Dooks idea emerged of a poor approach to manipulate the DOM tree, causing disorganization and code snippets  ungainly on your code. 
