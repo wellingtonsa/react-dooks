@@ -18,7 +18,11 @@
     "manipulate",
     "custom",
     "react",
-    "reactjs"
+    "reactjs",
+    "scroll",
+    "percentage",
+    "window",
+    "size"
   ],
   "author": "Wellington Araujo",
   "license": "MIT",
