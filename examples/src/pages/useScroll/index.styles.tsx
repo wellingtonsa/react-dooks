@@ -11,12 +11,14 @@ export const Parallax = styled.div`
     position: relative;
     height: 1000px;
     overflow: hidden;
+    background: #ffaf00;
 
 `;
 
 export const Image = styled.img<{ effect: any }>`
     position: absolute;
-    top: ${({ effect }) => `${effect}px`}
+    transform: ${({ effect }) => `translate3d(0px, ${effect}px, 0px)`};
+    transition: 200ms;
     
 `;
 
