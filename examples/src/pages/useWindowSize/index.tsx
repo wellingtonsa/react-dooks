@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from './index.styles';
-import { useWindowSize } from 'react-dooks/src';
+import { useWindowSize } from 'react-dooks';
 interface Props  {}
 
 const useWindowSizeExample:React.SFC<Props> = () => {
