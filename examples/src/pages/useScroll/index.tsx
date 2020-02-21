@@ -5,8 +5,7 @@ import { useScroll } from '../dist';
 interface Props  {}
 
 const useScrollExample:React.SFC<Props> = () => {
-    const effect = useScroll() || 0;
-    console.log(effect)
+    const effect = useScroll();
     return(
     <S.Container>
         <S.Parallax>
@@ -20,9 +19,7 @@ const useScrollExample:React.SFC<Props> = () => {
             <S.Image src={"http://www.firewatchgame.com/images/parallax/parallax7.png"} alt="" effect={interpolate(effect, [0,1000])}/>
             <S.Image src={"http://www.firewatchgame.com/images/parallax/parallax8.png"} alt="" effect={interpolate(effect, [0, 0])}/>
         </S.Parallax>
-        <S.Content>
-            <a>test</a>
-        </S.Content>
+        <S.Content></S.Content>
     </S.Container>)
 };
 

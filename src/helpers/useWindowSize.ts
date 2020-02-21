@@ -6,8 +6,8 @@ export default () => {
 
   const getSize = () => {
     return {
-      width: isClient ? window.innerWidth : undefined,
-      height: isClient ? window.innerHeight : undefined
+      width: isClient ? window.innerWidth : 0,
+      height: isClient ? window.innerHeight : 0
     };
   };
 
