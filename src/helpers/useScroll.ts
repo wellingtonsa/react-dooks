@@ -1,18 +1,19 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 
 export default (callback?: () => void, value?: number): number => {
-  
   const isClient = typeof window === "object";
-  let percentage:number = 0;
-  
+  const [percentage, setPercentage] = useState<number>(0);
+
   useMemo((): any => {
     if (!isClient) {
       return false;
     }
 
     const handleScroll = (): any => {
-      percentage = Math.round((window.scrollY * 100) / document.documentElement.scrollHeight);
+      const { body, documentElement } = document;
+      let percentage = ((documentElement.scrollTop || body.scrollTop) / ((documentElement.scrollHeight || body.scrollHeight) - documentElement.clientHeight)) * 100;
       if (percentage === value && callback) callback();
+      setPercentage(percentage);
     };
 
     window.addEventListener("scroll", handleScroll);
