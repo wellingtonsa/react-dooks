@@ -1,7 +1,18 @@
 import React from 'react';
-
+import * as S from './index.styles';
+import { useWindowSize } from '../dist';
 interface Props  {}
 
-const useWindowSize:React.SFC<Props> = () => <div>useWindowSize examples</div>;
+const useWindowSizeExample:React.SFC<Props> = () => {
+    const windowSize = useWindowSize() || { width: 0, height: 0};
+    return (
+    <S.Container>
+        <S.Content>
+            <span>{windowSize.width}</span>
+            <span>x</span>
+            <span>{windowSize.height}</span>
+        </S.Content>
+    </S.Container>)
+};
 
-export default useWindowSize;
+export default useWindowSizeExample;
