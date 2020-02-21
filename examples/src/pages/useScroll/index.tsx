@@ -1,7 +1,7 @@
 import React from 'react';
-import { interpolate } from 'react-dooks/src/util';
+import { interpolate } from 'react-dooks/dist/util';
 import * as S from './index.styles';
-import { useScroll } from 'react-dooks/src';
+import { useScroll } from 'react-dooks';
 interface Props  {}
 
 const useScrollExample:React.SFC<Props> = () => {
