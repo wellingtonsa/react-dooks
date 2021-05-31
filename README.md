@@ -15,4 +15,4 @@
 
 ## Overview
 
-The React Dooks idea emerged of a poor approach to manipulate the DOM tree, causing disorganization and code snippets ungainly on your code. Our idea is create many hooks that allow you do things that would need manipulate the DOM tree using pure JS, as get the `window size` values, get `screen scroll percentage`.
+The React Dooks idea emerged from a poor approach to manipulate the DOM tree, causing disorganization and code snippets ungainly on your code. Our main idea is create many hooks that allow you to do things that would need to manipulate the DOM tree using pure JS, as such: get the `window size` values, get `screen scroll percentage`, etc.
